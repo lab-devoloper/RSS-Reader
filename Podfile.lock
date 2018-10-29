@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Atributika (4.6.5)
+  - Kingfisher (4.10.0)
+  - SWXMLHash (4.4.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Atributika
+  - Kingfisher
+  - SWXMLHash (~> 4.4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Atributika
+    - Kingfisher
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Atributika: f15e4c0003b34d5c6be92080f0ad6fecbe2c5c2f
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  SWXMLHash: 93e01dafa5ea11c21aa34ad5bd6714dd72f70c2a
+
+PODFILE CHECKSUM: 35b0aa54db3eff485cf96a26696745adda87b2dd
+
+COCOAPODS: 1.5.3

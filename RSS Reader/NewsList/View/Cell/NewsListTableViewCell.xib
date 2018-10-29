@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsListTableViewCell" rowHeight="120" id="KGk-i7-Jjw" customClass="NewsListTableViewCell" customModule="RSS_Reader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ra8-kA-2lN">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Ra8-kA-2lN" secondAttribute="height" multiplier="1:1" id="7YQ-q6-Lub"/>
+                            <constraint firstAttribute="height" constant="100" id="QyL-je-B1S"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiA-0i-h7w">
+                        <rect key="frame" x="124" y="8" width="263" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-TT-bMQ" customClass="AttributedLabel" customModule="Atributika">
+                        <rect key="frame" x="124" y="34" width="263" height="52.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GD-63-uPA">
+                        <rect key="frame" x="124" y="94.5" width="263" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sp-xe-7MY">
+                        <rect key="frame" x="395" y="8" width="30" height="102.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="QZn-Kz-ld1"/>
+                        </constraints>
+                        <state key="normal" image="strelka-vpravo"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="openDetailNewsButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vjr-1u-kEO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oiA-0i-h7w" firstAttribute="leading" secondItem="Ra8-kA-2lN" secondAttribute="trailing" constant="16" id="14J-nX-5gU"/>
+                    <constraint firstAttribute="trailing" secondItem="2sp-xe-7MY" secondAttribute="trailing" constant="8" id="3Md-Mw-KS0"/>
+                    <constraint firstAttribute="bottom" secondItem="2sp-xe-7MY" secondAttribute="bottom" constant="8" id="3Vq-3N-snr"/>
+                    <constraint firstItem="ug2-TT-bMQ" firstAttribute="top" secondItem="oiA-0i-h7w" secondAttribute="bottom" constant="8" id="Buu-ud-RfH"/>
+                    <constraint firstItem="ug2-TT-bMQ" firstAttribute="trailing" secondItem="oiA-0i-h7w" secondAttribute="trailing" id="DC9-dD-B8V"/>
+                    <constraint firstItem="ug2-TT-bMQ" firstAttribute="leading" secondItem="Ra8-kA-2lN" secondAttribute="trailing" constant="16" id="JXQ-b1-2ac"/>
+                    <constraint firstAttribute="bottom" secondItem="1GD-63-uPA" secondAttribute="bottom" constant="8" id="MJK-1W-rmw"/>
+                    <constraint firstItem="1GD-63-uPA" firstAttribute="trailing" secondItem="oiA-0i-h7w" secondAttribute="trailing" id="MXi-Nb-hd0"/>
+                    <constraint firstItem="Ra8-kA-2lN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NGc-Hb-tse"/>
+                    <constraint firstItem="1GD-63-uPA" firstAttribute="leading" secondItem="Ra8-kA-2lN" secondAttribute="trailing" constant="16" id="Z0P-l1-o1P"/>
+                    <constraint firstItem="1GD-63-uPA" firstAttribute="top" secondItem="ug2-TT-bMQ" secondAttribute="bottom" constant="8" id="fcw-nO-aOO"/>
+                    <constraint firstItem="2sp-xe-7MY" firstAttribute="leading" secondItem="oiA-0i-h7w" secondAttribute="trailing" constant="8" id="kIz-0Q-Key"/>
+                    <constraint firstItem="2sp-xe-7MY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ltA-1N-R0a"/>
+                    <constraint firstItem="oiA-0i-h7w" firstAttribute="top" secondItem="Ra8-kA-2lN" secondAttribute="top" id="qIk-px-bwY"/>
+                    <constraint firstItem="Ra8-kA-2lN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="s42-zL-c3K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="1GD-63-uPA" id="9Ly-0n-Lj9"/>
+                <outlet property="descriptionLabel" destination="ug2-TT-bMQ" id="m5A-QX-u2j"/>
+                <outlet property="openNewsButtonWidthConstraint" destination="QZn-Kz-ld1" id="HPG-r1-rLh"/>
+                <outlet property="pictureConstraintHeight" destination="QyL-je-B1S" id="mzz-Fe-FuP"/>
+                <outlet property="pictureImageView" destination="Ra8-kA-2lN" id="Smg-L3-aMZ"/>
+                <outlet property="titleLabel" destination="oiA-0i-h7w" id="uvm-27-RjL"/>
+            </connections>
+            <point key="canvasLocation" x="90.400000000000006" y="91.304347826086968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="strelka-vpravo" width="800" height="800"/>
+    </resources>
+</document>
